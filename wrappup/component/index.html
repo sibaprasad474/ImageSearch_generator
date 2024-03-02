@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // i need a heading -> image -> para 
+
+    //imported body and by creating div appended with the body
+  
+//created 3 components by object
+    let components=[
+        {
+            heading:"This the heading section-1",
+            para:"this is the description to the following image",
+            image:"https://th.bing.com/th/id/R.e1707c345d5ac10c80a674030e606643?rik=pOsTg5KBoLuNvw&riu=http%3a%2f%2fwww.snut.fr%2fwp-content%2fuploads%2f2015%2f08%2fimage-de-paysage.jpg&ehk=1O5SWKkGpZ8yU%2b%2fAnLXG1v8k6BKxgyiXgHbOWBW1ir0%3d&risl=1&pid=ImgRaw&r=0",
+            Button:"Submit",
+
+        },
+        {
+            heading:"This the heading section-2",
+            para:"this is the description to the following image",
+            image:"https://th.bing.com/th/id/R.e1707c345d5ac10c80a674030e606643?rik=pOsTg5KBoLuNvw&riu=http%3a%2f%2fwww.snut.fr%2fwp-content%2fuploads%2f2015%2f08%2fimage-de-paysage.jpg&ehk=1O5SWKkGpZ8yU%2b%2fAnLXG1v8k6BKxgyiXgHbOWBW1ir0%3d&risl=1&pid=ImgRaw&r=0",
+            Button:"Submit",
+        },
+        {
+            heading:"This the heading section-3",
+            para:"this is the description to the following image",
+            image:"https://th.bing.com/th/id/R.e1707c345d5ac10c80a674030e606643?rik=pOsTg5KBoLuNvw&riu=http%3a%2f%2fwww.snut.fr%2fwp-content%2fuploads%2f2015%2f08%2fimage-de-paysage.jpg&ehk=1O5SWKkGpZ8yU%2b%2fAnLXG1v8k6BKxgyiXgHbOWBW1ir0%3d&risl=1&pid=ImgRaw&r=0",
+            Button:"Submit",
+        },
+
+    ];
+    let body=document.querySelector("body");
+    for(let i=0;i<components.length;i++){
+        let div=document.createElement("div");
+
+        let heading=document.createElement("h1");
+        heading.setAttribute("class","heading");
+        heading.innerText=components[i].heading;
+
+        let image=document.createElement("img");
+        image.src=components[i].image;
+        image.setAttribute("class","image");
+
+        let para=document.createElement("p");
+        para.setAttribute("class","para");
+        para.innerText=components[i].para;
+
+        div.append(heading,image,para);
+        body.append(div);
+        console.log(components);
+    };
+
+
+</script>

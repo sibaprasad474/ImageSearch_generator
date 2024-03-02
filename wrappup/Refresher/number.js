@@ -1,0 +1,11 @@
+// let num=12340/-1;
+// console.log(Number.isSafeInteger(num));
+// console.log(Number.isInteger(num));
+// console.log(Number.isFinite(num));
+// let val=123.4;
+// console.log(Math.round(val));
+// console.log(Math.abs((Math.floor(-43.4)+Math.trunc(-1.1)+Math.round(20.67))));
+// console.log(Math.trunc(-1.1));
+// console.log(Math.min(1,0,10,20,-2,67));
+// console.log(Math.max(1,0,10,20,-2,67));
+// console.log(Math.ceil(Math.random()*10));
